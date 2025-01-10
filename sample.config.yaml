@@ -1,0 +1,13 @@
+cluster_name: Sample
+tables:
+  - accounts
+shards:
+  - shard_id: 1
+    dsn: "postgres://postgres:password@localhost:5432/shard1"
+    writable: true
+  - shard_id: 2
+    dsn: "postgres://postgres:password@localhost:5432/shard2"
+    writable: true
+  - shard_id: 3
+    dsn: "postgres://postgres:password@localhost:5432/shard3"
+    writable: true
